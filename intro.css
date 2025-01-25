@@ -1125,8 +1125,8 @@ body {
 
 .box-slider-img5 .slider-img5 {
     position: absolute;
-    top: 100px;
-    width: 160px;
+    top: 8vw;
+    width: 11vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1656,9 +1656,9 @@ body {
 .mail {
     position: absolute;
     z-index: 100000;
-    margin-top: 330px;
-    width: 100px;
-    height: 40px;
+    margin-top: 20vw;
+    width: 20vw;
+    height: 20vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2071,7 +2071,7 @@ h2 {
 }
 
 .box-content .right .content .content-1 .title h1 {
-    margin-top: 0px;
+    margin-top: 0vw;
     transition: 0.5s;
     text-align: center;
 }
@@ -2091,17 +2091,15 @@ h2 {
 }
 
 .box-content .right .content p {
-    padding: 30px 15px 0px 15px;
+    padding: 0vw 3vw 0px 3vw;
     text-align: center;
-    font-size: 18px;
+    font-size: 1em;
     font-family: 'Dancing Script', cursive;
-    opacity: 0;
-    transition: 1s;
 }
 
-.slider3:hover .content p {
+/* .slider3:hover .content p {
     animation: bodyContent 2s 1s forwards;
-}
+} */
 
 @keyframes bodyContent {
     0% {
