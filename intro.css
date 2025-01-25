@@ -1941,8 +1941,8 @@ body {
 .box-circle_left .circle_left::before {
     position: absolute;
     content: '';
-    width: 310px;
-    height: 310px;
+    width: 19vw;
+    height: 19vw;
     border-radius: 50%;
     background-color: rgb(156, 19, 58);
     z-index: -1;
@@ -2058,6 +2058,19 @@ h2 {
     background: rgb(255, 216, 138);
 }
 
+#content-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0vw;
+    /* Điều chỉnh padding của toàn khung */
+    max-width: 100%;
+    /* Đặt giới hạn cho khung nội dung */
+    margin: auto;
+    /* Căn giữa nội dung */
+}
+
 .box-content .right .content .content-1 .title {
     font-family: 'Dancing Script', cursive;
     width: 100%;
@@ -2091,11 +2104,18 @@ h2 {
 }
 
 .box-content .right .content p {
-    padding: 0vw 3vw 0px 3vw;
+    padding: 1vw 1vw;
+    /* Padding sẽ tự động thay đổi theo viewport */
     text-align: center;
-    font-size: 1em;
+    font-size: clamp(0.8em, 1vw, 1.2em);
+    /* Font-size linh hoạt theo kích thước khung */
     font-family: 'Dancing Script', cursive;
+    max-width: 100%;
+    /* Đảm bảo đoạn văn không vượt quá khung */
+    box-sizing: border-box;
+    /* Bao gồm padding vào kích thước tổng */
 }
+
 
 /* .slider3:hover .content p {
     animation: bodyContent 2s 1s forwards;
@@ -2236,11 +2256,9 @@ h2 {
 
 .box-button-left-right {
     display: flex;
-    gap: 10px;
-    margin-top: 0px;
-    /* Khoảng cách giữa nút và phần trên */
-    margin-bottom: 15px;
-    /* Khoảng cách giữa nút và đáy */
+    gap: 1vw;
+    margin-top: -1vw;
+    margin-bottom: 11vw;
     align-items: flex-end;
 }
 
@@ -2255,7 +2273,7 @@ h2 {
 
 .box-button-left-right .button-right button,
 .box-button-left-right .button-left button {
-    padding: 10px 15px;
+    padding: 0.7vw 0.9vw;
     background-color: rgb(199, 37, 68);
     font-family: 'Roboto', sans-serif;
     border: none;
@@ -2305,8 +2323,8 @@ h2 {
 .box-button-left-right .button-right span,
 .box-button-left-right .button-left span {
     position: relative;
-    width: 42px;
-    height: 42px;
+    width: 3vw;
+    height: 3vw;
     background-color: rgb(199, 37, 68);
     border-radius: 0px 6px 6px 0px;
     /* Mặc định cho nút Follow */
