@@ -2401,3 +2401,43 @@ h2 {
     /* Hiệu ứng chuyển động khi thay đổi */
 
 }
+
+/* Cho màn hình nhỏ (điện thoại) */
+@media screen and (max-width: 768px) {
+    .box-slider {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .happynewyear {
+        font-size: 14px;
+    }
+
+    .box-button button {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Cho màn hình lớn (máy tính) */
+@media screen and (min-width: 769px) {
+    .box-slider {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .happynewyear {
+        font-size: 24px;
+    }
+
+    .box-button button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
