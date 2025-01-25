@@ -2400,25 +2400,31 @@ h2 {
 
 }
 
-/* Cho màn hình nhỏ (điện thoại) */
-@media screen and (max-width: 768px) {
+/* Cho màn hình rất nhỏ (điện thoại cỡ nhỏ) */
+@media screen and (max-width: 480px) {
     .box-slider {
         flex-direction: column;
-        padding: 10px;
+        padding: 5px;
     }
 
     .happynewyear {
-        font-size: 14px;
+        font-size: 12px;
+        text-align: center;
     }
 
     .box-button button {
-        font-size: 12px;
-        padding: 8px;
+        font-size: 10px;
+        padding: 6px;
     }
 
     img {
         max-width: 100%;
         height: auto;
+    }
+
+    /* Thêm khoảng cách giữa các phần tử */
+    .box-slider>div {
+        margin-bottom: 10px;
     }
 }
 
