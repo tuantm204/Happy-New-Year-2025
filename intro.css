@@ -1776,8 +1776,8 @@ body {
 
 .box-content {
     position: relative;
-    width: 51%;
-    height: 66%;
+    width: 68%;
+    height: 80%;
     display: flex;
     overflow: hidden;
     background: linear-gradient(360deg, rgb(206, 19, 53) 0%, rgb(199, 20, 53) 100%);
