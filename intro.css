@@ -2087,6 +2087,7 @@ h2 {
     margin-top: 0vw;
     transition: 0.5s;
     text-align: center;
+    font-size: 1.5em;
 }
 
 /* .slider3:hover .title h1 {
@@ -2461,5 +2462,35 @@ h2 {
     .box-button button {
         font-size: 16px;
         padding: 10px 20px;
+    }
+}
+
+/* Thông báo hiển thị khi ở chế độ dọc */
+.rotate-message {
+    display: none;
+    /* Mặc định ẩn */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 9999;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Hiển thị thông báo khi ở chế độ dọc */
+@media screen and (orientation: portrait) {
+    .rotate-message {
+        display: block;
+    }
+
+    body {
+        overflow: hidden;
+        /* Vô hiệu hóa cuộn trang khi hiển thị thông báo */
     }
 }

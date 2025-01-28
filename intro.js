@@ -1,5 +1,5 @@
 var buttonActive = document.querySelector('.button button')
-buttonActive.onclick = function(){
+buttonActive.onclick = function () {
     var boxFlower = document.querySelector('.flower-img:nth-child(1)')
     var boxFlower2 = document.querySelector('.flower-img:nth-child(2)')
     var boxFlower3 = document.querySelector('.flower-img:nth-child(3)')
@@ -36,10 +36,10 @@ buttonActive.onclick = function(){
 var mail = document.querySelector(".mail")
 var slider3 = document.querySelector(".slider3")
 var closeSlider3 = document.querySelector(".fa-xmark")
-mail.onclick = function(){
+mail.onclick = function () {
     slider3.classList.add("active")
 }
-closeSlider3.addEventListener('click', function(){
+closeSlider3.addEventListener('click', function () {
     slider3.classList.remove('active')
 })
 
@@ -47,8 +47,8 @@ closeSlider3.addEventListener('click', function(){
 // ------audio------------
 var buttonSong = document.querySelector('.button')
 var mySong = document.getElementById("song")
-buttonSong.onclick= function(){
-    if(mySong.paused){
+buttonSong.onclick = function () {
+    if (mySong.paused) {
         mySong.play()
     }
 }
@@ -96,3 +96,21 @@ backButton.addEventListener('click', () => {
         }
     }
 });
+
+// Kiểm tra chế độ màn hình ngay khi trang được tải
+function checkOrientation() {
+    const rotateMessage = document.querySelector('.rotate-message');
+    if (window.innerHeight > window.innerWidth) {
+        // Chế độ dọc
+        rotateMessage.style.display = 'block';
+        document.body.style.overflow = 'hidden'; // Vô hiệu hóa cuộn
+    } else {
+        // Chế độ ngang
+        rotateMessage.style.display = 'none';
+        document.body.style.overflow = 'auto'; // Bật cuộn lại
+    }
+}
+
+// Lắng nghe sự kiện thay đổi kích thước hoặc xoay màn hình
+window.addEventListener('resize', checkOrientation);
+window.addEventListener('load', checkOrientation);
