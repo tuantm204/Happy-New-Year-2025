@@ -2133,17 +2133,17 @@ h2 {
 }
 
 .content .fixedContent {
-    width: 250px;
-    height: 80px;
+    width: 25vw;
+    height: 7vw;
     overflow: hidden;
-    margin-left: 150px;
+    margin-left: 8vw;
 }
 
 .box-content .right .content h3 {
     font-size: 18px;
     font-family: 'Dancing Script', cursive;
     padding: 20px 0px 0px 20px;
-    margin-top: -50px;
+    margin-top: 0px;
 }
 
 .slider3:hover .content h3 {
