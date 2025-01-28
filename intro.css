@@ -1970,16 +1970,16 @@ h2 {
 }
 
 .text-content h2 {
-    font-size: 30px;
+    font-size: 2vw;
 }
 
 .text-content h1 {
-    font-size: 45px;
+    font-size: 3vw;
 }
 
 .text-content span {
     color: #fff5ad;
-    font-size: 40px;
+    font-size: 3vw;
     font-family: 'Anton', sans-serif;
     letter-spacing: 2px;
 }
